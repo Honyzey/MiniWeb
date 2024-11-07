@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>My First Web Page</title>
-</head>
-<body>
-    <h1>test</h1>
-</body>
+    <head>
+        <title>My First Web Page</title>
+    </head>
+    <body>
+        <form action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data" hidden>
+		    <div class="form-group">
+		        <label>Username:</label>
+	            <input type="text" name="username" value="briac">
+		    </div>
+		    <br>		
+		    <div class="form-group">
+		        <label>Status:</label>
+		        <input type="checkbox" name="status" checked>
+		    </div>
+		    <br>	
+		    <button type="submit">Submit</button>
+	    </form>
+    </body>
 </html>
